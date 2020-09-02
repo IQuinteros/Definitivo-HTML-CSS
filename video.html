@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- 
+                Mostrar video 
+
+                Con el atributo controls (No lleva un valor), se agregarán
+                automáticamente los controles
+
+                Preload, ayuda a que el video se empiece a renderizar, cuando se abre la página
+                Así no hay tanta espera cuando el usuario vea el video.
+
+                Preload, NO significa que el video se reproducirá solo.
+
+                Es una mala práctica que el video se reproduzca solo.
+
+                Para reproducir el video en un tiempo específico, se agrega
+                #t=[minuto_inicio],[termino_video]
+                al source del video.
+            -->
+            <video controls preload="auto">
+                <!-- 
+                    Para asegurar que el navegador pueda cargar el video. 
+                    Si no está un video, está el otro.
+
+                    El navegador irá en órden
+                -->
+                <source src="videos/f1video.mp4#t=10"/>
+                <source src="videos/f1video.mp4#t=10"/>
+            </video>
+        </section>
+    </main>
+</body>
+</html>

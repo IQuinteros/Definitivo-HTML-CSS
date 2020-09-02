@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <!-- Name: Para mandar la información con el nombre -->
+                    <input type="time" id="hora" name="hora">
+                </label>
+
+                <label for="dia">
+                    <span>Día</span>
+                    <!-- Name: Para mandar la información con el nombre -->
+                    <input type="date" id="dia" name="dia">
+                </label>
+
+                <label for="semana">
+                    <span>Semana</span>
+                    <!-- Name: Para mandar la información con el nombre -->
+                    <input type="week" id="semana" name="semana">
+                </label>
+
+                <label for="mes">
+                    <span>Mes</span>
+                    <!-- Name: Para mandar la información con el nombre -->
+                    <input type="month" id="mes" name="mes">
+                </label>
+
+                <!-- Enviar los datos -->
+                <input type="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <form action="">
+                <label for="calendar">
+                    <span>Calendario</span>
+                    <input type="datetime-local" id="calendar" name="calendar">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cuál es tu nombre?</span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+                </label>
+
+                <label for="correo">
+                    <span>¿Cuál es tu correo?</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" required>
+                </label>
+
+                <label for="pais">
+                    <span>¿Cuál es tu país?</span>
+                    <input type="text" name="pais" id="pais" autocomplete="country" required>
+                </label>
+
+                <label for="postal">
+                    <span>¿Cuál es tu código postal?</span>
+                    <input type="number" name="postal" id="postal" autocomplete="postal-code">
+                </label>
+
+                <input type="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <form action="">
+                <!-- https://css-tricks.com/dropdown-default-styling/ -->
+                <select name="cursos" id="cursos">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html5">HTML5</option>
+                    <option value="css3">CSS3</option>
+                    <option value="webstandards">Web Standards</option>
+                </select>
+
+                <input type="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Select con buenas prácticas -->
+        <section>
+            <form action="">
+                <input list="allCursos">
+                <datalist id="allCursos">
+                    <option value="JavaScript"></option>
+                    <option value="HTML5"></option>
+                    <option value="CSS3"></option>
+                    <option value="Web Standards"></option>
+                </datalist>
+                
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
