@@ -1,0 +1,58 @@
+/*
+    Se usará BEM, para nombrar las clases
+*/
+
+.main-nav{
+    margin-top: 10px;
+
+    /* Quitar bullets a las listas desordenadas */
+    list-style: none;
+
+    /* Espacio interno */
+    padding-left: 0px;
+
+    /* Color de fondo */
+    background-color: #13a3a3;
+}
+
+.main-nav__item{
+    /* Colocar los items en horizontal */
+    display: inline-block;
+}
+
+/* Todas las etiquetas que estén dentro de los elementos con esta clase: */
+.main-nav__item a{
+    color: white;
+    padding: 5px;
+
+    /* Bordes redondeados */
+    border-radius: 2px;
+
+    /* Quitar línea del "a" */
+    text-decoration: none;
+
+    /* Color de fondo */
+    background-color: red;
+}
+
+/* 
+    Pseudo clases --------------------
+*/
+
+/* Efecto hover */
+.main-nav__item a:hover{
+    color: blue;
+}
+
+.main-nav__item a:active{
+    color: red;
+}
+
+/*
+    Pseudo elemento -------------------
+*/
+/* Después del elemento ancla */
+.main-nav__item a::after{
+    /* Agregar este contenido */
+    content: " | ";
+}

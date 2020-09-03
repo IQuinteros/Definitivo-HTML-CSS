@@ -1,0 +1,21 @@
+/*
+    CSS3:
+    https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-2017-emezeta.pdf
+*/
+
+/* Agregar por Elemento */
+p {
+    color: blue;
+    font-size: 40px;
+}
+
+/* Agregar por clase */
+.parrafo{
+    color: red;
+}
+
+/* Agregar por ID */
+#texto{
+    color: yellow;
+    font-size: 24px;
+}
