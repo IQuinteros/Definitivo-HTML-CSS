@@ -1,0 +1,38 @@
+/* Adjacent Siblings */
+/* 
+    Colocar color rojo a todas las etiquetas p que sean cercanas a un h2
+
+    Cercano: Que arriba esté el h2, y abajo el p
+*/
+
+/*
+h2 + p {
+    color: red;
+}*/
+
+/* General Sibling */
+/*
+    Que estén a la "misma altura" de hermanos de entre h2 y p
+*/
+
+/*
+h2 ~ p{
+    color: red;
+}
+
+*/
+
+/* Que sea hija directa de un div */ 
+
+/*
+div > p{
+    color: red;
+}*/
+
+/*
+    Que esté dentro del div. Es más habitual
+*/
+
+div p{
+    color: blue;
+}

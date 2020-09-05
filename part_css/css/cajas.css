@@ -1,0 +1,27 @@
+*{
+    /* Selector universal */
+
+    /* Nada con padding ni margin*/
+    padding: 0;
+    margin: 0;
+
+    /* 
+        Sume el padding, con el width del elemento. Se hará el tamaño automático
+        Para no tener problemas con el width y el padding
+    */
+    box-sizing: border-box;
+}
+
+main{
+    /* Anchura */
+    width: 100%;   /* Calcular width: calc(100% - 70 - 20);*/
+    /* Altura */
+    height: 500px;
+
+    /* Grosor | Tipo | Color */
+    border: 10px solid gray;
+    /* Vertical | Horizontal */
+    padding: 20px 35px;
+
+    /* Estamos agregando de ancho, el borde, el padding y el width */
+}

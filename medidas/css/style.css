@@ -1,0 +1,13 @@
+p{
+    /* Absolute */
+    font-size: 18px;
+
+    /*font-size: 50%;*/
+}
+
+main{
+    background-color: rebeccapurple;
+    /* El width debería ser flexible */
+    width: 100%;
+    height: 500px;
+}

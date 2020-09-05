@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 75%; /* 75% de cada valor por defecto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: inherit; /* HEREDAR valores del padre */
+}
